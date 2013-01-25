@@ -3,7 +3,7 @@ from os import symlink
 from os.path import dirname
 from os.path import expanduser
 from os.path import lexists
-from os.path import relpath
+from os.path import realpath
 
 def setupFileSymlink(src_file,dst_file):
   if not lexists(dirname(dst_file)):
@@ -15,12 +15,12 @@ def setupFileSymlink(src_file,dst_file):
 
 def main():
 
-  HOME_DIR= expanduser("~") + "/testdummy/"
-
+  HOME_DIR= expanduser("~/")
+# HOME_DIR+="testdummy"
   configs = [("i3-config",".i3/config")]
 
   for (src_file, dst_file) in configs:
-    setupFileSymlink(relpath(src_file), (HOME_DIR + dst_file))
+    setupFileSymlink(realpath(src_file), (HOME_DIR + dst_file))
 
 
 if __name__ == '__main__':
