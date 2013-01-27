@@ -17,7 +17,8 @@ def main():
 
   HOME_DIR= expanduser("~/")
 # HOME_DIR+="testdummy"
-  configs = [("i3-config",".i3/config")]
+  configs = [("i3-config",".i3/config"),
+             ("i3status.conf",".i3/i3status.conf")]
 
   for (src_file, dst_file) in configs:
     setupFileSymlink(realpath(src_file), (HOME_DIR + dst_file))
