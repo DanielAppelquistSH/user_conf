@@ -142,3 +142,8 @@ bar {
 exec --no-startup-id i3-msg 'workspace 3; firefox; workspace 1'
 bindsym Control+Mod1+l exec i3lock
 
+# Bindings for moving workspaces between outputs (Screens)
+# foucus follows!
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Right move workspace to output right
+
