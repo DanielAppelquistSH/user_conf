@@ -19,7 +19,8 @@ def main():
 # HOME_DIR+="testdummy"
   configs = [("i3-config",".i3/config"),
              ("i3status.conf",".i3/i3status.conf"),
-             ("vimrc",".vimrc")]
+             ("vimrc",".vimrc"),
+	     ("zshrc",".zshrc")]
 
   for (src_file, dst_file) in configs:
     setupFileSymlink(realpath(src_file), (HOME_DIR + dst_file))
