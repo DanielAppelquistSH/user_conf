@@ -48,4 +48,6 @@ set showmatch		" Show matching brackets.
 "set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 
-
+augroup vimrc_autocmds
+    autocmd BufEnter *.txt set textwidth=79
+augroup END
