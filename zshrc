@@ -19,3 +19,7 @@ setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 
 export BROWSER="firefox -new-tab"
+
+
+# Execute local file if it exists
+[ -f $HOME/.zshrc_local ] && . $HOME/.zshrc_local

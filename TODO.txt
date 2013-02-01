@@ -3,6 +3,5 @@ Format: target file - description
 
 
 setup.py  - Add installtargets (i.e. terminal, X/full)
-zshrc     - Add support for local differences, read an additional file ".zshrc_local"
 vimrc     - Add text width setting default for txt files
 i3-config - Change to vim homerow settings (confusing with current shifted setting)
