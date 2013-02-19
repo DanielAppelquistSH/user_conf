@@ -50,5 +50,6 @@ set mouse=a		" Enable mouse usage (all modes)
 
 augroup vimrc_autocmds
     autocmd BufEnter *.txt set textwidth=79
+    autocmd BufEnter *.tex set textwidth=79
     autocmd BufEnter *.py  set expandtab ts=4 sw=4	
 augroup END
