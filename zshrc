@@ -22,6 +22,13 @@ setopt HIST_SAVE_NO_DUPS
 
 export BROWSER="firefox -new-tab"
 
+# Set up help (general)
+unalias  run-help  &> /dev/null
+autoload run-help
+
+# Set up help specifically for git
+unalias  run-help-git &> /dev/null
+autoload run-help-git
 
 # Execute local file if it exists
 [ -f $HOME/.zshrc_local ] && . $HOME/.zshrc_local
