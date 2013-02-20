@@ -48,6 +48,9 @@ set incsearch		" Incremental search
 "set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 
+" Set dir to save swp files to, vim tries to save in the mentioned order
+set directory=~/tmp,/tmp,/var/tmp/,.
+
 augroup vimrc_autocmds
     autocmd BufEnter *.txt set textwidth=79
     autocmd BufEnter *.tex set textwidth=79
