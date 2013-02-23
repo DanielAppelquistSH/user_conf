@@ -22,6 +22,13 @@ setopt HIST_SAVE_NO_DUPS
 
 export BROWSER="firefox -new-tab"
 
+# Set up "word style", i.e. how are words delimited
+# Selected style "normal":
+#  Word characters are alphanumeric plus $WORDCHARS
+autoload select-word-style
+export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+select-word-style normal
+
 # Set up help (general)
 unalias  run-help  &> /dev/null
 autoload run-help
