@@ -21,7 +21,8 @@ def main():
                 ("i3status.conf",".i3/i3status.conf"),
                 ("vimrc"        ,".vimrc"),
                 ("zshrc"        ,".zshrc"),
-                ("Xmodmap"      ,".Xmodmap")]
+                ("Xmodmap"      ,".Xmodmap"),
+                ("aliases"      ,".aliases")]
 
     for (src_file, dst_file) in configs:
         setupFileSymlink(realpath(src_file), (HOME_DIR + dst_file))

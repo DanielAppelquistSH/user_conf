@@ -37,5 +37,8 @@ autoload run-help
 unalias  run-help-git &> /dev/null
 autoload run-help-git
 
+# Execute alias file if it exists
+[ -f $HOME/.aliases ] && . $HOME/.aliases
+
 # Execute local file if it exists
 [ -f $HOME/.zshrc_local ] && . $HOME/.zshrc_local
