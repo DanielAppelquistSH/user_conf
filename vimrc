@@ -54,5 +54,7 @@ set directory=~/tmp,/tmp,/var/tmp/,.
 augroup vimrc_autocmds
     autocmd BufEnter *.txt set textwidth=79
     autocmd BufEnter *.tex set textwidth=79
-    autocmd BufEnter *.py  set expandtab ts=4 sw=4	
+    autocmd BufEnter *.py  set expandtab ts=4 sw=4
+    autocmd BufEnter *.rb set expandtab ts=4 sw=4
+    autocmd BufEnter *.rb set textwidth=79
 augroup END
