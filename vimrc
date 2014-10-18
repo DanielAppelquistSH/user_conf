@@ -21,6 +21,8 @@ if has("syntax")
   syntax on
 endif
 
+execute pathogen#infect()
+
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 set background=dark
@@ -55,6 +57,11 @@ augroup vimrc_autocmds
     autocmd BufEnter *.txt set textwidth=79
     autocmd BufEnter *.tex set textwidth=79
     autocmd BufEnter *.py  set expandtab ts=4 sw=4
-    autocmd BufEnter *.rb set expandtab ts=4 sw=4
+    autocmd BufEnter *.rb set expandtab ts=2 sw=2
     autocmd BufEnter *.rb set textwidth=79
+    autocmd BufEnter *.erb set textwidth=79 ts=2 sw=2
+    autocmd BufEnter *.rake set expandtab ts=2 sw=2
+    autocmd BufEnter *.rake set textwidth=79
 augroup END
+
+
