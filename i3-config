@@ -146,3 +146,6 @@ bindsym Control+Mod1+l exec i3lock
 bindsym $mod+Control+Left move workspace to output left
 bindsym $mod+Control+Right move workspace to output right
 
+# Binding for toggeling sound mute/unmute with alsa
+bindsym $mod+t exec amixer sset Master toggle
+
